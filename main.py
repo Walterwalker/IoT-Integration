@@ -35,4 +35,23 @@ while True:
             print("You can visit the websites, please keep the track of time...great going")
     time.sleep(5)
     
+  
+
+This part of the code is to scrape the productivity score from selenium web app
     
+    def auto():
+    driver=webdriver.Chrome('C:/Users/Owner/chromedriver.exe')
+    driver.get('https://www.rescuetime.com/dashboard')
+    driver.find_element_by_name("email").send_keys("wwalker@gmail.com")
+    driver.find_element_by_name("password").send_keys("**************")
+    driver.find_element_by_name("button").click()
+    global a
+    a=int(driver.find_element_by_class_name("score").text)
+    driver.close()
+    t = Timer(secs, auto)
+    t.start()
+    print(a)
+auto()
+
+
+
