@@ -53,5 +53,9 @@ This part of the code is to scrape the productivity score from selenium web app
     print(a)
 auto()
 
-
+issues found so far:
+    
+    streaming real time data and working on it
+    mutli processing.
+    IFTTT inetgration with weather underground is a bit easy but integration with automate app is really worst...should change it soon
 
